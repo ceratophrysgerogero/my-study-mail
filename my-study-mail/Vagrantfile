@@ -1,0 +1,10 @@
+#フォーマットバージョン2
+Vagrant.configure("2") do |config|
+  config.vm.box = "centos/7"
+  config.vm.network "public_network", ip: "192.168.255.100"
+
+  config.vm.provider "virtualbox" do |v|
+    v.name = "my-study-mail"
+  end
+
+end
